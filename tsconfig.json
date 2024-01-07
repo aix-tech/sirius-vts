@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    /* 访问 https://aka.ms/tsconfig 了解更多关于这个文件的信息 */
+    /* 项目 */
+    "composite": true,
+    /* 语言和环境 */
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "noLib": true,
+    /* 模块 */
+    "module": "ESNext",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "/*": ["./*"]
+    },
+    "types": ["node", "jsdom"] /* 指定要包含但不在源文件中引用的类型包名称。 */,
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    /* 生成 */
+    "noEmit": true,
+    "newLine": "lf",
+    /* 互操作性约束 */
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    /* 类型检查 */
+    "strict": true,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    /* 完整性 */
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "src/**/*.tsx"],
+  "exclude": ["src/**/__tests__/*", "**/node_modules/**", "**/dist/**"]
+}

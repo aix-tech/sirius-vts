@@ -1,0 +1,11 @@
+.idea
+.husky
+.vscode
+.github
+
+dist
+public
+node_modules
+
+*.config.js
+package.json

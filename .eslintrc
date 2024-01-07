@@ -1,0 +1,71 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "extends": ["standard", "prettier", "plugin:@typescript-eslint/recommended"],
+  "overrides": [],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "defineProps": "readonly",
+    "defineEmits": "readonly"
+  },
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "rules": {
+    "no-console": "off",
+    "no-continue": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "no-case-declarations": "off",
+    "no-use-before-define": "off",
+
+    "guard-for-in": "off",
+    "import/first": "error",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/no-duplicates": "error",
+    "import/newline-after-import": "error",
+    "import/no-extraneous-dependencies": "off",
+
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+
+    "vue/no-v-html": "off",
+    "vue/no-unused-vars": "off",
+    "vue/attributes-order": "off",
+    "vue/one-component-per-file": "off",
+    "vue/script-setup-uses-vars": "error",
+    "vue/max-attributes-per-line": "off",
+    "vue/no-reserved-component-names": "off",
+    "vue/html-closing-bracket-newline": "off",
+    "vue/custom-event-name-casing": "off",
+    "vue/first-attribute-linebreak": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/multiline-html-element-content-newline": "off",
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/component-name-in-template-casing": ["error", "kebab-case"]
+  }
+}
